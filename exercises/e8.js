@@ -6,10 +6,10 @@ import { data } from "../data/data";
 
 export function findPlanetNameByMoon(data, moonName) {
   // Your code goes here...
-  const planetByMoon = data.planets.find((planet) => {
-    return planet.moons && planet.moons.includes(moonName);
-  });
-  return planetByMoon.name;
+  const planetNameByMoon = data.planets.find(
+    (planet) => planet.moons && planet.moons.includes(moonName)
+  );
+  return planetNameByMoon.name;
 }
 
 // === TEST YOURSELF ===
